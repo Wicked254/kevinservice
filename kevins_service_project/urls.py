@@ -12,7 +12,7 @@ urlpatterns = [
     path('questions/<int:pk>/', QuestionRetrieveView.as_view(),
          name='question_retrieve'),#allows user to retrieve a particular question with it's id
     path('questions/<int:question_id>/answers/',
-         AnswerListCreateView.as_view(), name='answer_list_create'),#endpoint allows users to list and create answers for given question id's
-    path('user/questions/', UserQuestionsListView.as_view(),
+         AnswerListCreateView.as_view(), name='answer_list_create'),#endpoint allows users to list and create answers for given question
+    path('user/questions/', UserQuestionsListView.as_view(),#endpoint allows users to list questions asked by the user
          name='user_question_list'),
 ]

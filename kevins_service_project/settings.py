@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'questions',
     'rest_framework'
 ]
+#rest framework settings
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
